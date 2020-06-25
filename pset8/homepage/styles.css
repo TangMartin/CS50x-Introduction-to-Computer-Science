@@ -1,0 +1,64 @@
+.default
+{
+    text-align: center;
+    color: grey;
+    font: FreeMono;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p
+{
+    text-align: center;
+    color: grey;
+    font: FreeMono;
+}
+
+#image
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 75%;
+}
+
+.picturealbum
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.centertable
+{
+    margin: 0px auto;
+}
+
+.button
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 310px;
+    color: grey;
+    font: FreeMono;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}

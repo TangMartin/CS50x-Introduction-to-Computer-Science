@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link href="/static/style.css" rel="stylesheet">
+        <title>FAQ</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class='title' style="float: left;">SAUCYBOYS</div>
+            <a href="cart">CART ({{totalcart}})</a>
+            <a class= "active" href="/faq">FAQ</a>
+            <a href="/shop">SHOP</a>
+            <a href="/">HOME</a>
+        </div>
+        <div class="soycontainer">
+            <div style="margin: 50px;">
+                <h1 style="padding-top: 100px;"> FAQ </h1>
+                <p style="white-space: pre-line;"> Can't see you question feel free to
+                email us at: <a href="ask@saucyboys.com">ask@saucyboys.com</a></p>
+                
+                <button class="accordion"><p>Why are you guys called Saucyboys?</p></button>
+                    <div class="panel">
+                          <p1>We’re a pair of twin brothers who are raised and born in New York City. We’ve always loved soy sauce, we had it with everything.
+                          It was only natural that we started our own store for selling soy sauce!.</p>
+                    </div>
+
+                <button class="accordion"><p>Where are you located?</p></button>
+                    <div class="panel">
+                          <p1>New York City!</p>
+                    </div>
+
+                <button class="accordion"><p>Where do you ship to?</p></button>
+                    <div class="panel">
+                            <p1>We ship world wide baby!</p>
+                    </div>
+                
+                <button class="accordion"><p>Dude, you got discounts??</p></button>
+                    <div class="panel">
+                            <p1>Enter the discount code during checkout!</p>
+                    </div>
+                    
+                <button class="accordion"><p>I can't find my favourite soy sauce...</p></button>
+                    <div class="panel">
+                            <p1>No problem, feel free to contact us at ask@saucyboys.com and let us know what soy sauce you want in the future.</p>
+                    </div>
+
+
+
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                         acc[i].addEventListener("click", function() {
+                         this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        } else {
+                         panel.style.display = "block";
+                        }
+                    });
+                    }
+                </script>
+                
+            </div>
+        </div>
+ 
+
+  </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link href="/static/style.css" rel="stylesheet">
+        <title>Home</title>
+        {% if get_flashed_messages() %}
+            <header>
+                <div class="alert alert-primary border text-center" role="alert" style="background-color: #D93333; color: #1A1A1A">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+    </head>
+    <body>
+        <div class="topnav">
+            <div class='title' style="float: left;">SAUCYBOYS</div>
+            <a href="/cart">CART ({{totalcart}})</a>
+            <a href="/faq">FAQ</a>
+            <a href="/shop">SHOP</a>
+            <a class= "active" href="#about">HOME</a>
+        </div>
+ 
+        <div class="soycontainer">
+            <div><img src="static/soysauce.PNG" alt="Picture of Soysauces" class="image" style="float: left; width: 60%; height: 60%;">
+                <div style="padding-left: 600px;">
+                <h1 style="padding-top: 300px;">Has life been a bit</h1>
+                <h1>bland? Let's get Saucey!</h1>
+                <p>We have what we're looking for - a huge selection
+                of the world's tastiest soy sauce! Come take a peak!</p>
+                <a href="/shop"><button type="button" class="btn btn-primary btn-lg" style="background-color: #D93333"><h1 style="font-size: 20px; padding-top: 2px;">BUY SOY SAUCE</h1></button></a>
+                </div>
+            </div>
+            <div style="background-color: #FFF9ED">
+                <img src="static/japenese.PNG" alt="Picture of Japenese Painting" class="image" style="float: right; width: 60%; height: 60%;">
+                <div style="padding: 40px 80px;">
+                    <h1 style="font-size: 40px">Soy Sauce? What's That?</h1>
+                    <p>Soy sauce has first been made since the 13th century. It has an earthy,
+                    unami flavour, making it the ideal all-purpose seasoning! The most basic and
+                    key ingredients to Soy Sauce are:</p>
+                    <ul>
+                    <li><p>Fermented Soybeans</p></li>
+                    <li><p>Salt</p></li>
+                    <li><p>Wheat</p></li>
+                    <li><p>Water</p></li>
+                </ul>
+                </div>
+            </div>
+            <div style="background-color: #D93333">
+                <div style="text-align: center;">
+                    <h1 style="padding-top: 100px;">You're SOY awesome!</h1>
+                    <div style="display: inline;">
+                        <p style="white-space: pre-line;">Be the first to hear about new stuff from
+                        <div class="title">SAUCYBOYS</div></p>
+                    </div>
+                    <form action="/" method="post">
+                        <div class="form-group" style="margin: 0 auto; width: 600px;">
+                            <input autocomplete="off" class="form-control" name="email" placeholder="You Email Please!" type="text">
+                        </div>
+                        <div style="padding-top: 50px; padding-bottom: 100px;">
+                            <button class="btn btn-primary" type="lookup" style="background-color: #1A1A1A; padding: 10px 75px;"><p style="color: #FFFFFF; padding-top: 10px;">STAY IN TOUCH</p></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+               
+                
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+        {% for diffstocks in stocks %}
+            <tr>
+                <td>{{ diffstocks['symbol'] }}</td>
+                <td>{{ diffstocks['name'] }}</td>
+                <td>{{ diffstocks['amount'] }}</td>
+                <td>{{ diffstocks['price'] }}</td>
+                <td>{{ diffstocks['total'] }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td>CASH</td>
+            <th></th>
+            <th></th>
+            <th></th>
+            <td> {{ cash }}</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th> {{ totalcash }}</th>
+        </tr>
+    </table>
+{% endblock %}
